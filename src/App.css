@@ -1,28 +1,197 @@
-.App {
-  text-align: center;
-}
+@charset "UTF-8";
+body {
+  font-family: 'Roboto', sans-serif; }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+.splash {
+  width: 100vw;
+  height: 100vh;
+  background: url("/images/splash.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+  .splash .splash-overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(142, 202, 159, 0.6); }
+  .splash .splash-content {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 20%;
+    color: white;
+    animation-delay: 1.5s; }
+    .splash .splash-content .splash-img {
+      height: 100px;
+      width: 100px;
+      border: 2px solid #8ECA9F;
+      border-radius: 50%; }
+    .splash .splash-content .splash-button {
+      background: #8ECA9F;
+      width: 50px;
+      padding: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white; }
+    .splash .splash-content .splash-button:hover {
+      background: #b1dabc; }
+    .splash .splash-content .splash-title {
+      font-weight: normal; }
+    .splash .splash-content .splash-location {
+      font-weight: normal;
+      font-style: italic; }
+    .splash .splash-content .splash-icon {
+      margin-right: 10px; }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
+.social {
   font-size: 1.5em;
-}
+  margin: 20px; }
+  .social a {
+    display: inline-block;
+    margin: 10px;
+    color: white;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 50%; }
+    .social a svg {
+      display: block;
+      margin: 5px auto; }
+    .social a:hover {
+      background: white;
+      transform: scale(1.5);
+      transition: transform 0.5s; }
+  .social .twitter-link:hover {
+    color: #00aced; }
+  .social .linkedin-link:hover {
+    color: #0077b5; }
+  .social .github-link:hover {
+    color: black; }
 
-.App-intro {
-  font-size: large;
-}
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(50, 50, 50, 0.2);
+  z-index: 1000;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+.navigation ul {
+  padding: 0;
+  margin: 0; }
+  .navigation ul li {
+    display: inline; }
+    .navigation ul li a {
+      margin: 10px;
+      padding: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white; }
+    .navigation ul li a:hover {
+      color: white;
+      border-bottom: 2px solid white; }
+
+.trio {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: white;
+  background: #657E6C;
+  padding: 5vh 10%; }
+  .trio .trio-segment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 3%;
+    text-align: center; }
+    .trio .trio-segment .segment-icon {
+      font-size: 2em; }
+    .trio .trio-segment .segment-text {
+      font-size: 0.9em; }
+
+.technology {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5vh 0;
+  background: #323232; }
+  .technology .technology-segment {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+    .technology .technology-segment .technology-overlay {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 2; }
+      .technology .technology-segment .technology-overlay:hover {
+        background: rgba(101, 126, 108, 0.8); }
+    .technology .technology-segment .technology-content {
+      width: 100%;
+      height: 100%;
+      background: url("/images/splash.jpg");
+      background-size: cover;
+      filter: grayscale(100%) blur(1px); }
+    .technology .technology-segment .technology-logo {
+      display: block;
+      margin: 0 auto;
+      height: 50px; }
+
+.experience {
+  background: #FAFAFA;
+  color: #4c4c4c;
+  padding: 5vh 0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  .experience .placement {
+    width: 90vw;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    z-index: 10;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+    .experience .placement .placement-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .experience .placement .placement-head .placement-duration,
+      .experience .placement .placement-head .placement-title {
+        margin: 0; }
+      .experience .placement .placement-head .placement-position,
+      .experience .placement .placement-head .placement-type {
+        font-size: 0.7em; }
+    .experience .placement .placement-skills {
+      font-size: 0.9em;
+      list-style-type: none; }
+      .experience .placement .placement-skills .placement-skill::before {
+        content: '✓ - '; }
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1; }
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in; }
+
+@media only screen and (min-width: 992px) {
+  .trio {
+    flex-wrap: nowrap; }
+  .experience .placement {
+    width: 50vw; } }

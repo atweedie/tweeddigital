@@ -1,0 +1,277 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.splash {
+    width                : 100vw;
+    height               : 100vh;
+    background           : url("/images/splash.jpg");
+    background-size      : cover;
+    background-attachment: fixed;
+
+    .splash-overlay {
+        position  : absolute;
+        width     : 100vw;
+        height    : 100vh;
+        background: rgba(142,202,159,0.6);
+    }
+
+    .splash-content {
+        position       : absolute;
+        text-align     : center;
+        width          : 100%;
+        top            : 20%;
+        color          : white;
+        animation-delay: 1.5s;
+
+        .splash-img {
+            height       : 100px;
+            width        : 100px;
+            border       : 2px solid #8ECA9F;
+            border-radius: 50%;
+        }
+
+        .splash-button {
+            background     : #8ECA9F;
+            width          : 50px;
+            padding        : 10px;
+            border-radius  : 5px;
+            text-decoration: none;
+            font-weight    : bold;
+            color          : white;
+        }
+
+        .splash-button:hover {
+            background: lighten(#8ECA9F, 10%);
+        }
+
+        .splash-title {
+            font-weight: normal;
+        }
+
+        .splash-location {
+            font-weight: normal;
+            font-style : italic;
+        }
+
+        .splash-icon {
+            margin-right: 10px;
+        }
+    }
+}
+
+.social {
+    font-size: 1.5em;
+    margin   : 20px;
+
+    a {
+        display      : inline-block;
+        margin       : 10px;
+        color        : white;
+        min-width    : 35px;
+        min-height   : 35px;
+        border-radius: 50%;
+
+        svg {
+            display: block;
+            margin : 5px auto;
+        }
+
+        &:hover {
+            background: white;
+            transform : scale(1.5);
+            transition: transform 0.5s;
+        }
+    }
+
+    .twitter-link:hover {
+        color: #00aced;
+    }
+
+    .linkedin-link:hover {
+        color: #0077b5;
+    }
+
+    .github-link:hover {
+        color: black;
+    }
+}
+
+.navbar {
+    position       : fixed;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    background     : rgba(50,50,50, 0.2);
+    z-index        : 1000;
+    width          : 100%;
+    height         : 50px;
+    box-shadow     : 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.navigation {
+    ul {
+        padding: 0;
+        margin : 0;
+
+        li {
+            display: inline;
+
+            a {
+                margin         : 10px;
+                padding        : 18px;
+                font-weight    : bold;
+                text-decoration: none;
+                color          : white;
+            }
+
+            a:hover {
+                color        : white;
+                border-bottom: 2px solid white;
+            }
+        }
+    }
+}
+
+.trio {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-around;
+    flex-wrap      : wrap;
+    color          : white;
+    background     : #657E6C;
+    padding        : 5vh 10%;
+
+    .trio-segment {
+        display       : flex;
+        align-items   : center;
+        flex-direction: column;
+        margin        : 3%;
+        text-align    : center;
+
+        .segment-icon {
+            font-size: 2em;
+        }
+
+        .segment-title {}
+
+        .segment-text {
+            font-size: 0.9em;
+        }
+    }
+}
+
+.technology {
+    display        : flex;
+    align-items    : center;
+    flex-wrap      : wrap;
+    justify-content: space-around;
+    padding        : 5vh 0;
+    background     : #323232;
+
+    .technology-segment {
+        position  : relative;
+        height    : 200px;
+        width     : 200px;
+        margin    : 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+
+        .technology-overlay {
+            position       : absolute;
+            display        : flex;
+            flex-direction : column;
+            justify-content: center;
+            color          : white;
+            width          : 100%;
+            height         : 100%;
+            background     : rgba(0,0,0,.6);
+            z-index        : 2;
+
+            &:hover {
+                background: rgba(101,126,108, .8);
+            }
+        }
+
+        .technology-content {
+            width          : 100%;
+            height         : 100%;
+            background     : url("/images/splash.jpg");
+            background-size: cover;
+            filter: grayscale(100%) blur(1px);
+        }
+
+        .technology-logo {
+            display: block;
+            margin : 0 auto;
+            height : 50px;
+        }
+    }
+}
+
+.experience {
+    background     : #FAFAFA;
+    color          : lighten(#323232, 10%);
+    padding        : 5vh 0;
+    display        : flex;
+    position       : relative;
+    flex-direction : column;
+    justify-content: center;
+    align-content  : center;
+    align-items    : center;
+
+    .placement {
+        width     : 90vw;
+        padding   : 10px;
+        margin    : 10px;
+        background: white;
+        z-index   : 10;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+
+        .placement-head {
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+
+            .placement-duration,
+            .placement-title {
+                margin: 0;
+            }
+
+            .placement-position,
+            .placement-type {
+                font-size: 0.7em;
+            }
+        }
+
+        .placement-skills {
+            font-size      : 0.9em;
+            list-style-type: none;
+
+            .placement-skill::before {
+                content: '✓ - ';
+            }
+        }
+    }
+}
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity   : 1;
+    transition: opacity 300ms ease-in;
+}
+@media only screen and (min-width: 992px) {
+    .trio {
+        flex-wrap: nowrap;
+    }
+
+    .experience {
+        .placement {
+            width: 50vw;
+        }
+    }
+}
