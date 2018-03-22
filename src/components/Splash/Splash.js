@@ -11,7 +11,7 @@ const Splash = () => {
                     <div className="splash-content animated fadeInUp">
                         <h1 className="splash-name">Adam Tweedie</h1>
                         <h2 className="splash-title">Full Stack Developer</h2>
-                        <img className="splash-img"src="portfolio/images/me.jpg" alt="Adam Tweedie"></img>
+                        <img className="splash-img"src="portfolio/me.jpg" alt="Adam Tweedie"></img>
                         <Social/>
                         <h4 className="splash-location"><FontAwesomeIcon className="splash-icon" icon="map-marker-alt"/>Manchester, UK</h4>
                         <a href="https://drive.google.com/open?id=19JSk2gbLXqo9D7c255Bi5YLW4JOiWw8q" rel="nofollow" target="_blank" className="splash-button">Download CV</a>
