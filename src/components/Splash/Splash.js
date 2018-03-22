@@ -14,7 +14,7 @@ const Splash = () => {
                         <img className="splash-img"src="/images/me.jpg" alt="Adam Tweedie"></img>
                         <Social/>
                         <h4 className="splash-location"><FontAwesomeIcon className="splash-icon" icon="map-marker-alt"/>Manchester, UK</h4>
-                        <a href="https://drive.google.com/open?id=19JSk2gbLXqo9D7c255Bi5YLW4JOiWw8q" rel="nofollow" target="_blank" className="splash-button">Download CV</a>
+                        <a href="https://drive.google.com/open?id=1SFABaHyoa9T8DGdnWcvx90gfOU3J7Lk1" rel="nofollow" target="_blank" className="splash-button">Download CV</a>
                     </div>
             </div>
         </div>
