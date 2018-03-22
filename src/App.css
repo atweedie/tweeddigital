@@ -5,7 +5,7 @@ body {
 .splash {
   width: 100vw;
   height: 100vh;
-  background: url("/splash.jpg");
+  background: url("/images/splash.jpg");
   background-size: cover;
   background-attachment: fixed; }
   .splash .splash-overlay {
