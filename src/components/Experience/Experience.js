@@ -3,10 +3,24 @@ import Placement from './Placement';
 
 const placements = [
     {
+        name: 'BBC',
+        position: 'Software Engineer',
+        type: 'Full TIme',
+        duration: 'June 2018 - Present',
+        skills: [
+            'Authentication Flow Development',
+            'Tooling - Continous Integration',
+            'Pair programming / Code Reviews',
+            'Mentoring and Skill Sharing',
+            'NodeJS, React, OAuth, Docker, AWS',
+            'TDD/BDD - Testing and Automation',
+        ]
+    },
+    {
         name: 'Live & Now Ltd',
         position: 'Front End Developer',
         type: 'Full TIme',
-        duration: 'June 2017 - Present',
+        duration: 'June 2017 - March 2018',
         skills: [
             'Web Application Development',
             'Project Management – Agile, Kanban',

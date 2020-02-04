@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Placement = ({content}) => {
-    console.log(content);
     return (
         <div className="placement">
             <div className="placement-head">
